@@ -2,6 +2,7 @@
 using BepInEx;
 using Astras_Plugin_Template.Core;
 using Astras_Plugin_Template.Stuff;
+using Astras_Plugin_Template.Libraries;
 
 namespace Astras_Plugin_Template.Plugin;
 
@@ -17,6 +18,7 @@ public class Plugin : BaseUnityPlugin
     {
         GameObject Plugin = new GameObject(Constantss.ObjectName);
         Plugin.AddComponent<Main>();
+        Plugin.AddComponent<OnScreenNotify>();
         DontDestroyOnLoad(Plugin);
     }
 }
