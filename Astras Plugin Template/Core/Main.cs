@@ -34,7 +34,7 @@ public class Main : MonoBehaviour
 
     private void JoinRoom(string roomName)
     {
-        if (PhotonNetwork.InRoom)
+        if (!PhotonNetwork.InRoom)
         {
             PhotonNetwork.Disconnect();
         }
