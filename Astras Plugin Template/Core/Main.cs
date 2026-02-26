@@ -10,7 +10,7 @@ public class Main : MonoBehaviour
 {
     // your mod code here heres a bit of a example
     private bool _Pressed = false;
-    private void FixedUpdate()
+    private void Update()
     {
         Mod();
     }
